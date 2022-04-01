@@ -1,19 +1,19 @@
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
 @font-face {
     font-family: 'ticket';
-    src: url(src/font/Ticket\ to\ the\ Star.ttf);
+    src: url(./src/font/Ticket\ to\ the\ Star.ttf);
 }
 @font-face {
     font-family: 'sinami';
-    src: url(src/font/Sinami\ demo.ttf);
+    src: url(./src/font/Sinami\ demo.ttf);
 }
 @font-face {
     font-family: 'blue';
-    src: url(src/font/Blue\ Yellow.ttf);
+    src: url(./src/font/Blue\ Yellow.ttf);
 }
 @font-face {
     font-family: 'secret';
-    src: url(src/font/Secret\ Admirer.ttf);
+    src: url(./src/font/Secret\ Admirer.ttf);
 }
 *{
     font-family: 'Outfit', sans-serif;
