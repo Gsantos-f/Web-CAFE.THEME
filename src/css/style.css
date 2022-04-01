@@ -1,0 +1,286 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css");
+@font-face {
+    font-family: 'ticket';
+    src: url(/src/font/Ticket\ to\ the\ Star.ttf);
+}
+@font-face {
+    font-family: 'sinami';
+    src: url(/src/font/Sinami\ demo.ttf);
+}
+@font-face {
+    font-family: 'blue';
+    src: url(/src/font/Blue\ Yellow.ttf);
+}
+@font-face {
+    font-family: 'secret';
+    src: url(/src/font/Secret\ Admirer.ttf);
+}
+*{
+    font-family: 'Outfit', sans-serif;
+    text-decoration: none;
+}
+body{
+    background-color: #927d72;
+}
+header{
+    height: 130px;
+    background-color: #593C23;
+    align-items: center;
+    font-family: 'Outfit';
+}
+header .logo{
+    display: flex;
+    justify-content: space-between;     
+    align-items: center;
+}
+header .logo div{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+}
+header .logo nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 330px;
+    margin: 20px;
+}
+.logo ul li a{
+    color: #ffffff;
+    font-family: 'secret';
+    font-size: 30px;
+    margin-right: 30px;
+}
+.logo figure img{
+    width: 100px;
+    padding-right: 20px;
+}
+.logo h1{
+    font-size: 20px;
+    color: #ffffff;
+    font-family: 'ticket';
+    font-size: 30px;
+}
+main{
+    background-color: #ff3535;
+    display: flex;
+    height: 480px;
+    width: 100%;
+}
+.menus-link[data-descr], .nosso-café-link[data-descr], .contatos-link[data-descr]{
+    color:#BF8969;
+    text-align: justify;
+}
+.menus-link[data-descr]:hover::after, .contatos-link[data-descr]:hover::after, .nosso-café-link[data-descr]:hover::after{
+    content: attr(data-descr);
+    background-color: #ffffff;
+    border: 1px #BF8969 solid;
+    border-radius: 5px;
+    width: 150px;
+    padding: 10px;
+    position: absolute;
+    top: 90px;
+    right: 235px;
+    animation: menus 0.3s;
+}
+.contatos-link[data-descr]:hover::after{
+    right: 5px;
+}
+.nosso-café-link[data-descr]:hover::after{
+    right: 120px;
+}
+@keyframes menus {
+    from {
+      transform: translatey(5px);
+      opacity: 40%;
+    }
+    to {
+      transform: translatey(0px);
+    }
+  }
+/* cartao */
+.box-cartao{
+    background-color: #ffffff;
+    box-shadow:#00000059 0px 12px 10px -4px inset;
+    height: 100%;
+    width: 60vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.cartao{
+    cursor: pointer;
+    display: none;
+    flex-direction: column;
+    width: 500px;
+    height: 350px;
+    border-radius: 60px 60px 30px 30px;
+    animation: cartao 1s;
+}
+@keyframes cartao {
+    from {
+      transform: translatey(10px);
+      opacity: 40%;
+    }
+    to {
+      transform: translatey(0px);
+    }
+  }
+.aberto{
+    display: flex;
+}
+.cartao img{
+    width: 100%;
+    height: 70%;
+    background-position: top;
+    object-fit: cover;
+    border-radius: 60px 60px 0 0;
+}
+.cartao-info{
+    background-color: #BF9B7A;
+    height: 30%;
+    border-radius: 0 0 30px 30px;
+    color: #ffffff;
+    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'secret';
+    box-shadow: rgba(240, 156, 46, 0.4) 0px 5px, rgba(240, 156, 46, 0.3) 0px 10px, rgba(240, 149, 46, 0.2) 0px 15px, rgba(240, 156, 46, 0.1) 0px 20px, rgba(240, 149, 46, 0.05) 0px 25px;
+}
+.cartao-info h4{
+    color: #401E12;
+}
+.cartao-info h5{
+    margin-left: 30px;
+}
+.botao{
+    display: flex;
+    flex-direction: column;
+}
+.botao svg{
+    height: 80px;
+    width: 80px;
+    margin-left: 50px;
+    color:#BF9B7A;
+    cursor: pointer;
+    box-shadow: rgba(252, 136, 5, 0.842) 0px 2px 4px, rgba(226, 124, 8, 0.63) 0px 7px 13px -3px, rgba(226, 124, 8, 0.637) 0px -3px 0px inset;
+    border-radius: 12px;
+    transition: .2s;
+}
+.botao svg:hover{
+    transform: scale(1.05);
+}
+.botao svg:active{
+    color:#8b7057;
+}
+.botao .seta-baixo{
+    margin-top: 20px;
+}
+/* cardapio */
+.box-cardapio{
+    background-color: #F2E2CE;
+    box-shadow:#00000059 0px 12px 10px -4px inset;
+    width: 40vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.opcoes-cardapio{
+    text-align: center;
+    height: 400px;
+    width: 300px;
+}
+.opcoes-cardapio h2{
+    padding-top: 70px;
+    font-family: 'ticket';
+    font-size: 50px;
+}
+.opcoes-cardapio a{
+    display: flex;
+    justify-content: center;
+    color: #000000;
+    margin-top: 40px;
+    font-family: 'secret';
+    font-size: 30px;
+    font-weight: bolder;
+}
+.opcoes-cardapio a:hover{
+    color: #31302f;
+}
+.opcoes-cardapio a:active{
+    color: #8a6a4a;
+}
+/* rodapé */
+footer{
+    font-family: 'Outfit';
+    text-align: left;
+    color: #ffffff;
+    box-shadow:#00000059 0px -120px 10px -4px inset;
+}
+footer .caixa div{
+    display: flex;
+    flex-direction: column;
+}
+footer .caixa span{
+    margin: 1px;
+}
+.caixa{
+    padding-top: 40px;
+    margin: 0 80px;
+}
+.caixa .sociais{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+}
+.caixa .sociais .facebook{
+    margin-left: 25px;
+}
+.sociais svg{
+    color: #ffffff;
+    transition: .3s;
+}
+.sociais svg:hover{
+    transform: scale(1.3);
+    color: #ffdcd0;
+}
+.caixa .politicas{
+    margin: 30px 0;
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.caixa .politicas span, .caixa .politicas a{
+    color: #ffffff;
+    transition: .2s;
+}
+.caixa .politicas span:hover, .caixa .politicas a:hover{
+    transform: scale(1.02);
+    color: #ffdcd0;
+}
+.caixa .contato-direitos{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between ;
+    margin-top: 50px;
+    margin-bottom: 80px;
+}
+footer .footerCreditos{
+    font-family: 'Outfit', sans-serif;
+    background-color: #593C23;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    text-align: center;
+    padding-top: 10px;
+}
+footer .footerCreditos a{
+    color: #D99C2B;
+}
+footer .footerCreditos a:hover{
+    color: rgb(233, 191, 114);
+}

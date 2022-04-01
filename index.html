@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="./src/image/xicara.png" type="image/x-icon">
+    <link rel="shortcut icon" href="image/xicara.png" type="image/x-icon">
     <link rel="stylesheet" href="./src/css/reset.css">
     <link rel="stylesheet" href="./src/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,15 +17,15 @@
             <div class="logo">
                 <div>
                     <figure>
-                        <img src="./src/image/xicara.png" alt="Logo Cafezin do Gabs">
+                        <img src="image/xicara.png" alt="Logo Cafezin do Gabs">
                     </figure>
                     <h1>Cafézinho do Gabs</h1>
                 </div>    
                 <nav>
                     <ul>
-                        <li><a href="#">Menus</a></li>
-                        <li><a href="#">Nosso Café</a></li>
-                        <li><a href="#">Contatos</a></li>
+                        <li class="menus-link" data-descr="Lista com todos os menus disponiveis na loja."><a href="#">Menus</a></li>
+                        <li class="nosso-café-link" data-descr="Conheça um pouco sobre nossas lojas"><a href="#">Nosso Café</a></li>
+                        <li class="contatos-link" data-descr="Entre em contato conosco "><a href="#">Contatos</a></li>
                     </ul>
                 </nav>
             </div>
@@ -34,46 +34,46 @@
     </header>
     <main>   
         <div class="box-cartao">
-            <div class="cartao">                  
-                <img class="cartao-topo" src="./src/image/cafe2.jpg" alt="img-topo">
+            <div class="cartao c-1 aberto" id="cafe-1">                  
+                <img class="cartao-topo" src="image/cafe2.jpg" alt="img-topo">
                 <div class="cartao-info">
                     <h4>Especial:</h4>
                     <h5>Café Cremoso<h5>
                 </div>               
             </div>
-            <div class="cartao">                  
-                <img class="cartao-topo" src="./src/image/cafe5.jpg" alt="img-topo">
+            <div class="cartao c-2" id="cafe-2">                  
+                <img class="cartao-topo" src="image/cafe5.jpg" alt="img-topo">
                 <div class="cartao-info">
                     <h4>Especial:</h4>
                     <h5>Café ao leite<h5>
                 </div>               
             </div>
-            <div class="cartao">                  
-                <img class="cartao-topo" src="./src/image/cafe3.jpg" alt="img-topo">
+            <div class="cartao c-3" id="cafe-3">                  
+                <img class="cartao-topo" src="image/cafe3.jpg" alt="img-topo">
                 <div class="cartao-info">
                     <h4>Especial:</h4>
                     <h5>Café Preto<h5>
                 </div>               
             </div>
-            <div class="cartao">                  
-                <img class="cartao-topo" src="./src/image/cafe4.jpg" alt="img-topo">
+            <div class="cartao c-4" id="cafe-4">                  
+                <img class="cartao-topo" src="image/cafe4.jpg" alt="img-topo">
                 <div class="cartao-info">
                     <h4>Especial:</h4>
                     <h5>Cappuccino<h5>
                 </div>               
             </div>
-            <div class="cartao aberto">                  
-                <img class="cartao-topo" src="./src/image/cafe6.jpg" alt="img-topo">
+            <div class="cartao c-5" id="cafe-5">                  
+                <img class="cartao-topo" src="image/cafe6.jpg" alt="img-topo">
                 <div class="cartao-info">
                     <h4>Especial:</h4>
                     <h5>Croissant<h5>
                 </div>               
             </div>
             <div class="botao">
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
+                <svg onclick="cima()" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up-square-fill" viewBox="0 0 16 16">
                     <path d="M2 16a2 2 0 0 1-2-2V2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2zm6.5-4.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 1 0z"/>
                 </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="seta-baixo" viewBox="0 0 16 16">
+                <svg onclick="baixo()"xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="seta-baixo" viewBox="0 0 16 16">
                     <path d="M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm6.5 4.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 1 1 .708-.708L7.5 10.293V4.5a.5.5 0 0 1 1 0z"/>
                 </svg>
             </div>
@@ -123,5 +123,6 @@
               </span>
         </div>
     </footer>
+    <script src="src/js/index.js"></script>
 </body>
 </html>
