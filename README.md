@@ -14,7 +14,7 @@
  
  ##
   
-<img  align="center" height="120px" src="https://github-readme-stats.vercel.app/api/pin/?username=gsantos-f&repo=Web-CAFE.THEME&theme=react">
+<img  align="center" height="121px" src="https://github-readme-stats.vercel.app/api/pin/?username=gsantos-f&repo=Web-CAFE.THEME&theme=react">
  
 <img align="center" height="120px" src="https://c.tenor.com/IzXnvyY0oTMAAAAd/sip-drink.gif">
 
