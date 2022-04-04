@@ -1,10 +1,10 @@
  ## ◉ 📑WEB CAFE THEME
  ▣ PT-BR: Neste projeto foi desenvolvido um website para por em pratica alguns dos aprendizados em js puro, usando de forma simples com algumas estruturas basicas como loop, O tema da pagina foi uma ideia nossa, apenas para ter uma base para o conteudo e estilização da mesma, utilizando js, css e html. O site de uma cafeteria aonde podemos ver varias funções que uma loja precisa, alguns dos principais produtos, informações de contato, redes sociais, mostrando um pouco da propria loja e etc.
-Abaixo algumas imagens mostrando as funcionalidades do site com js e css. 
+Abaixo algumas imagens mostrando as funcionalidades do site com js e css. </br>
  ▣ EN-US: In this project a website was developed to put into practice some of the learnings in pure js, using it in a simple way with some basic structures such as loop, The theme of the page was our idea, just to have a basis for the content and stylization of it, using js, css and html. The website of a coffee shop where we can see several functions that a store needs, some of the main products, contact information, social networks, showing a little of the store itself and etc.
 Below are some images showing the site's features with js and css.
  
- PAGE: https://gsantos-f-cafetheme.netlify.app
+ PAGE: https://gsantos-f-cafetheme.netlify.app</br>
  PROJETO FEITO COM <a href="https://github.com/ItalloEduardo">ItalloEduardo</a>
  
  ## ◉ 💻Technologies
