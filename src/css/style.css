@@ -116,7 +116,7 @@ main{
     display: none;
     flex-direction: column;
     width: 500px;
-    height: 350px;
+    height: 360px;
     border-radius: 60px 60px 30px 30px;
     animation: cartao 1s;
 }
