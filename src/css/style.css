@@ -53,10 +53,9 @@ header .logo nav ul{
 }
 .logo figure img{
     width: 100px;
-    padding-right: 20px;
+    margin-right: 20px;
 }
 .logo h1{
-    font-size: 20px;
     color: #ffffff;
     font-family: 'ticket';
     font-size: 30px;
@@ -81,7 +80,7 @@ main{
     position: absolute;
     top: 90px;
     right: 235px;
-    animation: menus 0.3s;
+    animation: menus 3s;
 }
 .contatos-link[data-descr]:hover::after{
     right: 5px;
@@ -90,12 +89,16 @@ main{
     right: 120px;
 }
 @keyframes menus {
-    from {
-      transform: translatey(5px);
-      opacity: 40%;
+    0%{
+        opacity: 0%;
     }
-    to {
-      transform: translatey(0px);
+    50% {
+        transform: translatey(5px);
+        opacity: 0%;
+    }
+    100% {
+        transform: translatey(0px);
+        opacity: 100%;
     }
   }
 /* cartao */

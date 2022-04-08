@@ -1,0 +1,116 @@
+@media (max-width: 420px) {
+    /* CABEÇALHO */
+    header{
+        height: 160px;
+        width: 100%;
+    }
+    header .logo{
+        width: 100%;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+    header .logo div{
+        width: 300px;
+        padding-bottom: 0;
+        justify-content: center;
+    }
+    header .logo nav{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    header .logo nav ul{
+        width: 330px;
+    }
+    .logo ul li a{
+        margin-right: 0px;
+    }
+    .logo h1{
+        font-size: 20px;
+    }
+    .logo figure img{
+        width: 80px;
+    }
+    .menus-link[data-descr]:hover::after, .contatos-link[data-descr]:hover::after, .nosso-café-link[data-descr]:hover::after{
+        content:none;
+    }
+    /* CARDS */
+    main{
+        height: 100%;
+        flex-direction: column;
+    }
+    .box-cartao{
+        width: 100%;
+        flex-direction: column;
+    }
+    .cartao{
+        margin-top: 70px;
+        width: 300px;
+        height: 340px;
+    }
+    .cartao .cartao-topo{
+        border-radius: 15px 15px 0 0;
+    }
+    .cartao .cartao-info{
+        padding: 10px 0;
+        align-items: center;
+        border-radius: 0 0 8px 8px;
+        flex-direction: column;
+    }
+    .cartao .cartao-info h5{
+        margin: 0;
+    }
+    .botao{
+        flex-direction: row;
+        margin: 40px 0;
+    }
+    .botao svg{
+        margin: 0;
+    }
+    .botao .seta-baixo{
+        margin: 0;
+        margin-left: 30px;
+    }
+    .botao .seta-cima{
+        margin: 0;
+    }
+    /* CARDAPIO */
+    .box-cardapio{
+        width: 100%;
+    }
+    /* FOOTER */
+    footer{
+        width: 100%;
+    }
+    footer .caixa{
+        margin: 0 20px;
+    }
+    .caixa .contato-direitos{
+        text-align: center;
+        margin: 40px 0;    
+        align-items: center;
+    }
+    .caixa .contato-direitos .contato span{
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+    }
+    .caixa .contato-direitos .contato{
+        margin-right: 30px;
+    }
+    .caixa .politicas{
+        flex-direction: column;
+        align-items: center;
+    }
+    .traço-divisoria{
+        display: none;
+    }
+    .footerCreditos span p{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+   
+}
